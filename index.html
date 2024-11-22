@@ -3,27 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <title>Navigation Buttons</title>
     <style>
-        .button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
+        body {
+            font-family: Arial, sans-serif;
             text-align: center;
-            text-decoration: none;
-            display: inline-block;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 15px 30px;
             font-size: 16px;
-            margin: 4px 2px;
             cursor: pointer;
-            border-radius: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <button class="button" onclick="location.href='About'">About</button>
-    <button class="button" onclick="location.href='Employment History'">Employment History</button>
-    <button class="button" onclick="location.href='Projects'">Projects</button>
-    <button class="button" onclick="location.href='Skill Sets'">Skill Sets</button>
+    <div class="button-container">
+        <a href="About.html" class="button">About</a>
+        <a href="Employment%20History.html" class="button">Employment History</a>
+        <a href="Project.html" class="button">Projects</a>
+        <a href="Skill%20Sets.html" class="button">Skill Sets</a>
+    </div>
 </body>
 </html>
